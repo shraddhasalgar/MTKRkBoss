@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".deposit_money"
+    android:background="@color/playwinbg">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/playwinprimary">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/back"
+                    app:tint="@color/black" />
+
+
+                <com.rkboss.mtk.latobold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Deposite Coins"
+                    android:fontFamily="@font/comfortaa"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:gravity="center">
+
+                    <com.rkboss.mtk.latobold
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_button"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Balance   : "
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18sp"
+                        android:visibility="visible" />
+
+
+                    <com.rkboss.mtk.latobold
+                        android:id="@+id/wallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/white_button"
+                        android:gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/text"
+                        android:padding="7dp"
+                        android:text="0"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/qrcode"
+                    android:layout_width="270dp"
+                    android:layout_height="270dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp" />
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/amount"
+                    android:padding="15dp"
+                    android:hint="Enter amount to add"
+                    android:inputType="number"
+                    android:backgroundTint="@color/md_white_1000"
+                    android:background="@drawable/white_button_round"
+                    android:textSize="16sp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+
+                    <Button
+                        android:id="@+id/btn500"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="500"
+                        android:background="@drawable/ax_border"
+                        />
+
+                    <Button
+                        android:id="@+id/btn1000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/ax_border"
+                        android:text="1000" />
+
+                    <Button
+                        android:id="@+id/btn2000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/ax_border"
+                        android:layout_marginLeft="15dp"
+                        android:text="2000" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+
+                    <Button
+                        android:id="@+id/btn5000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/ax_border"
+                        android:text="5000" />
+
+                    <Button
+                        android:id="@+id/btn10000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/ax_border"
+                        android:layout_marginLeft="15dp"
+                        android:text="10000" />
+
+                    <Button
+                        android:id="@+id/btn20000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/ax_border"
+                        android:layout_marginLeft="15dp"
+                        android:text="20000" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/md_white_1000"
+                        android:id="@+id/gpay_icon"
+                        android:background="@drawable/white_button_round"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/googlepay" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <com.rkboss.mtk.latobold
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Google Pay"
+                                android:textColor="@color/md_black_1000"
+                                />
+
+                            <com.rkboss.mtk.latobold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Auto approve"
+                                android:textColor="@color/md_black_1000"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/md_white_1000"
+                        android:id="@+id/phonepe_icon"
+                        android:background="@drawable/white_button_round"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/phone_pe" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <com.rkboss.mtk.latobold
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Phone Pe"
+                                android:textColor="@color/md_black_1000"
+                                />
+
+                            <com.rkboss.mtk.latobold
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/md_black_1000"
+                                android:layout_height="wrap_content"
+                                android:text="Auto approve"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:layout_marginBottom="50dp"
+                        android:backgroundTint="@color/md_white_1000"
+                        android:id="@+id/paytm_icon"
+                        android:background="@drawable/white_button_round"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/paytm"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="10dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <com.rkboss.mtk.latobold
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Paytm"
+                                android:textColor="@color/md_black_1000"
+                                />
+
+                            <com.rkboss.mtk.latobold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Manual approve by admin"
+                                android:textColor="@color/md_black_1000"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                    <lib.kingja.switchbutton.SwitchMultiButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:id="@+id/switchmultibutton"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        app:strokeRadius="5dp"
+                        app:strokeWidth="1dp"
+                        app:selectedTab="0"
+                        app:selectedColor="@color/accent"
+                        app:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <com.rkboss.mtk.latobold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Proceed to Payment"
+                    android:background="@drawable/button"
+                    android:id="@+id/submit"
+                    android:textColor="#fff"
+                    android:visibility="gone"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="16sp"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_btn"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/whatsapp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            />
+
+        <com.rkboss.mtk.latobold
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="Direct Deposit"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/font"
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

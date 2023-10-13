@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/playwinbg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RedBracket">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar"
+                android:padding="5dp"
+                android:background="@color/playwinprimary"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/back"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="10dp"
+                            android:padding="10dp"
+                            android:src="@drawable/back"
+                            app:tint="@color/black" />
+
+
+                        <com.rkboss.mtk.latobold
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/comfortaa"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:text="Red Bracket"
+                            android:textColor="@color/black" />
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/wallet_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible"
+                        android:layout_marginRight="10dp">
+
+                        <com.rkboss.mtk.latobold
+                            android:id="@+id/balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:visibility="visible"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/coin"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:visibility="visible"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/wallet_icon" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="60dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <com.rkboss.mtk.latobold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:id="@+id/date"
+                        android:layout_marginBottom="7dp"
+                        android:background="#730800"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white"
+                         android:textSize="14sp"
+                         android:visibility="visible"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/type_container"
+                        android:visibility="visible"
+                        android:layout_weight="2"
+                        android:background="@color/black"
+                        android:orientation="horizontal"
+                        android:padding="1dp">
+
+                        <com.rkboss.mtk.latobold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/open_game"
+                            android:background="@color/playwinprimary"
+                            android:layout_weight="1"
+                            android:textColor="@color/md_black_1000"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="EASY MODE"
+                            />
+
+                        <com.rkboss.mtk.latobold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/close_game"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                         android:gravity="center"
+                            android:textColor="@color/font"
+                            android:padding="10dp"
+                            android:text="SPECIAL MODE"
+
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <Spinner
+                    android:id="@+id/type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext"
+                    android:padding="5dp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#A19C27B0"
+                        android:padding="3dp">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                           android:background="@color/black"
+                            android:padding="1dp">
+
+                            <com.rkboss.mtk.latobold
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:fontFamily="@font/comfortaa"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:padding="10dp"
+                                android:background="@color/playwinprimary"
+                                android:text="Half Red Bracket"
+                                android:id="@+id/odd"
+                                />
+
+                            <com.rkboss.mtk.latobold
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:id="@+id/even"
+                                android:fontFamily="@font/comfortaa"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:textColor="@color/font"
+                                android:padding="10dp"
+                                android:text="Full Red Bracket"
+
+                                />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <com.rkboss.mtk.latobold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/comfortaa"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Bid Digits"
+                        android:textColor="@color/black" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:id="@+id/full_bracket"
+                                android:visibility="gone"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:padding="5dp"
+                                    android:layout_height="wrap_content">
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold"
+                                            android:text="00"
+                                            android:textColor="@color/font" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="11"
+                                            android:textColor="@color/font"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="22"
+                                            android:textColor="@color/font"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="33"
+                                            android:textColor="@color/font"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="44"
+                                            android:textColor="@color/font"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold"
+                                            />
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:padding="5dp"
+                                    android:layout_height="wrap_content">
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="55"
+                                            android:textColor="@color/font"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="66"
+                                            android:textColor="@color/font"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="77"
+                                            android:textColor="@color/font"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="88"
+                                            android:textColor="@color/font"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="99"
+                                            android:textColor="@color/font"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold"
+                                            />
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:id="@+id/half_bracket"
+                                android:visibility="visible"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:padding="5dp"
+                                    android:layout_height="wrap_content">
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:text="05"
+                                            android:textColor="@color/font"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="16"
+                                            android:textColor="@color/font"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="27"
+                                            android:textColor="@color/font"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="38"
+                                            android:textColor="@color/font"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="49"
+                                            android:textColor="@color/font"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold"
+                                            />
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:padding="5dp"
+                                    android:layout_height="wrap_content">
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="50"
+                                            android:textColor="@color/font"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="61"
+                                            android:textColor="@color/font"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="72"
+                                            android:textColor="@color/font"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="83"
+                                            android:textColor="@color/font"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.rkboss.mtk.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="94"
+                                            android:textColor="@color/font"
+                                            android:fontFamily="@font/comfortaa"
+                                            android:textSize="13dp"
+                                            android:textStyle="bold"
+                                            />
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </HorizontalScrollView>
+
+                    <com.rkboss.mtk.latobold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Bid Points"
+                        android:fontFamily="@font/comfortaa"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Points"
+                        android:textStyle="bold"
+                        android:maxLength="5"
+                        android:fontFamily="@font/comfortaa"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="#60000000"
+                        android:textSize="13sp"
+                        android:visibility="visible"
+                        tools:ignore="TouchTargetSizeCheck"  />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:padding="5dp">
+
+                        <Button
+                            android:id="@+id/button10"
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/homeb"
+                            android:backgroundTint="#E91E63"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="10"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="18sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/button50"
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/homeb"
+                            android:backgroundTint="#E91E63"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:text="50"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="18sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <Button
+                            android:id="@+id/button100"
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/homeb"
+                            android:backgroundTint="#E91E63"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:text="100"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="18sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/button1000"
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@drawable/homeb"
+                            android:backgroundTint="#E91E63"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:text="1000"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="18sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/ax_loginbutton"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

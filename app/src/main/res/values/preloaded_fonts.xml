@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/autour_one</item>
+<!--        <item>@font/bree_serif</item>-->
+        <item>@font/capriola</item>
+        <item>@font/carter_one</item>
+        <item>@font/chelsea_market</item>
+        <item>@font/comfortaa</item>
+        <item>@font/comic_neue</item>
+        <item>@font/delius_swash_caps</item>
+        <item>@font/delius_unicase_bold</item>
+        <item>@font/kavivanar</item>
+        <item>@font/lato</item>
+        <item>@font/lemon</item>
+<!--        <item>@font/original_surfer</item>-->
+    </array>
+</resources>

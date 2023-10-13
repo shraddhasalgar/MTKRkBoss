@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/sent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <com.rkboss.mtk.latobold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_2_shape"
+
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/msgSent"
+            android:layout_marginRight="10dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+            />
+
+        <com.rkboss.mtk.latonormal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/msgSent"
+            android:layout_alignParentRight="true"
+            android:text="11:20 AM"
+            android:layout_marginRight="15dp"
+            android:id="@+id/sentTime"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:textColor="@color/md_black_1000"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/received"
+        android:layout_height="wrap_content">
+
+        <com.rkboss.mtk.latobold
+            android:id="@+id/msgReceived"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/button"
+            android:textSize="16sp"
+            android:backgroundTint="@color/black"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+            android:textColor="@color/md_white_1000" />
+
+        <com.rkboss.mtk.latonormal
+            android:id="@+id/receivedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/msgReceived"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="11:20 AM"
+            android:textColor="@color/md_black_1000"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

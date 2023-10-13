@@ -1,0 +1,203 @@
+<resources>
+    <string name="app_name">આરકે બોસ</string>
+
+    <!--APIs-->
+    <string name="market_api">market.php</string>
+    <string name="market_list">market_list.php</string>
+    <string name="bet">bet.php</string>
+    <string name="charts">charts.php</string>
+    <string name="sangam">sangam.php</string>
+    <string name="content">content.php</string>
+    <string name="ledger">gameledger.php</string>
+    <string name="ledgers">ax_winning.php</string>
+    <string name="login">login.php</string>
+    <string name="home">home.php</string>
+    <string name="games">games.php</string>
+    <string name="profile">profile.php</string>
+    <string name="password">password.php</string>
+    <string name="rate">rate.php</string>
+    <string name="register">register.php</string>
+    <string name="transaction">transaction.php</string>
+    <string name="get_gateway">get_gateway.php</string>
+    <string name="getconfig">get_config.php</string>
+    <string name="withdraw_modes">withdraw_modes.php</string>
+    <string name="withdraw_request">withdraw_request.php</string>
+    <string name="market_list_starline">market_list_starline.php</string>
+    <string name="starline_timings">starline_timings.php</string>
+
+    <string name="delhi_markets">delhi_markets.php</string>
+    <string name="reset_pin">reset_pin.php</string>
+    <string name="ax_validpin">ax_validpin.php</string>
+    <string name="resend_otp">કોડ ફરીથી મોકલો?</string>
+
+    <string name="gpay">com.google.android.apps.nbu.paisa.user</string>
+    <string name="paytm">net.one97.paytm</string>
+    <string name="phonepe">com.phonepe.app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">હેલો ખાલી ટુકડો</string>
+
+
+    <string name="ek_img_content">નિકાસકિટ છબી</string>
+    <string name="sign_up_string">સાઇન અપ કરો</string>
+    <string name="enter_your_personal_details_to_continue_string">ચાલુ રાખવા માટે તમારી વ્યક્તિગત વિગતો દાખલ કરો</string>
+    <string name="enter_mobile_number_string">મોબાઇલ નંબર દાખલ કરો</string>
+    <string name="enter_name_string">નામ દાખલ કરો</string>
+    <string name="enter_emailid_string">ઈમેલ આઈડી દાખલ કરોd</string>
+    <string name="enter_password_string">પાસવર્ડ દાખલ કરો</string>
+    <string name="enter_pin_string">પિન દાખલ કરો</string>
+    <string name="enter_referral_code_string">રેફરલ કોડ દાખલ કરો</string>
+    <string name="submit_string">સબમિટ કરો</string>
+    <string name="title_activity_single_bet">સિંગલબેટ</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">પ્રથમ ટુકડો</string>
+    <string name="second_fragment_label">બીજો ટુકડો</string>
+    <string name="next">આગળ</string>
+    <string name="previous">અગાઉના</string>
+    <string name="play_jodi">જોડી રમો</string>
+
+
+    <string name="hello_first_fragment">હેલો પ્રથમ ટુકડો</string>
+    <string name="hello_second_fragment">હેલો બીજો ટુકડો. આર્ગ: %1$s</string>
+
+    <string name="qrimg">qr_code.php</string>
+
+    <string name="changeLang">ભાષા બદલો</string>
+
+
+
+    <string name="signin">સાઇન ઇન કરો</string>
+    <string name="log_in">પ્રવેશ કરો</string>
+    <string name="extraa">હજુ સુધી નોંધાયેલ નથી? સાઇન અપ કરો</string>
+    <string name="myprofile">મારી પ્રોફાઈલ</string>
+    <string name="mywallet">મારું પાકીટ</string>
+    <string name="game_rate">રમત દર</string>
+    <string name="addpoints">પોઈન્ટ ઉમેરો</string>
+    <string name="game">રમત ઇતિહાસ</string>
+    <string name="withdrawpoints">પોઈન્ટ્સ પાછા ખેંચો</string>
+    <string name="bankdetails">બેંકની વિગત</string>
+    <string name="transfercoins">ટ્રાન્સફર સિક્કા</string>
+    <string name="howtoplay">કેમનું રમવાનું</string>
+    <string name="contactus">અમારો સંપર્ક કરો</string>
+    <string name="referearn">સંદર્ભ લો અને કમાઓ</string>
+    <string name="rateus">અમને રેટ કરો</string>
+    <string name="logoutt">લૉગ આઉટ</string>
+    <string name="num">600</string>
+    <string name="numbe">+91-</string>
+    <string name="watsapp">વોટ્સેપ</string>
+    <string name="chart">ચાર્ટ</string>
+    <string name="wallet">વૉલેટ</string>
+    <string name="rete">દર</string>
+    <string name="withd">ઉપાડો</string>
+    <string name="playwin">રમો અને જીતો</string>
+    <string name="deposmoney">પૈસા જમા કરો</string>
+    <string name="withmone">નાણા ઉપાડવા</string>
+    <string name="playsingle">સિંગલ રમો</string>
+    <string name="appnoti">એપ્લિકેશન સૂચના</string>
+    <string name="starline">સ્ટારલાઇન ગેમ્સ</string>
+    <string name="playjodi">જોડી રમો</string>
+    <string name="singlepanna">સિંગલ પન્ના</string>
+    <string name="doublepanna">ડબલ પન્ના</string>
+    <string name="triplepanna">ટ્રિપલ પન્ના</string>
+    <string name="halfsang">અડધો સંગમ</string>
+    <string name="fullsang">પૂર્ણ સંગમ</string>
+    <string name="jodicro">જોડી ક્રોસિંગ</string>
+    <string name="gakidesh">ગલી દેશાવર ગેમ્સ</string>
+    <string name="proi">પ્રોફાઇલ</string>
+    <string name="depos">જમા</string>
+    <string name="cha">ચાર્ટ્સ</string>
+    <string name="notset">સૂચના સેટિંગ્સ</string>
+    <string name="shar">શેર કરો</string>
+    <string name="exi">બહાર નીકળો</string>
+    <string name="refre">તાજું કરો</string>
+
+    <string name="addmoney">પૈસા ઉમેરો</string>
+
+
+
+    <string name="noset">સૂચના સેટિંગ</string>
+    <string name="managpro">પ્રોફાઇલ મેનેજ કરો</string>
+    <string name="nam">નામ</string>
+    <string name="mob">મોબાઇલ નંબર</string>
+    <string name="updprof">પ્રોફાઇલ અપડેટ કરો</string>
+    <string name="chapass">પાસવર્ડ બદલો</string>
+    <string name="newpass">નવો પાસવર્ડ</string>
+    <string name="confpass">પાસવર્ડની પુષ્ટિ કરો</string>
+    <string name="updpass">પાસવર્ડ અપડેટ કરો</string>
+    <string name="addfun">ભંડોળ ઉમેરો</string>
+    <string name="withdfun">પૈસા ઉપાડો</string>
+    <string name="winhist">વિજેતા ઇતિહાસ</string>
+    <string name="transhist">વ્યવહાર ઇતિહાસ</string>
+    <string name="bidhist">બિડ ઇતિહાસ</string>
+
+    <string name="sing">એકલુ   -</string>
+    <string name="jod">જોડી    -</string>
+    <string name="singpan">સિંગલ પન્ના   -</string>
+    <string name="doubpan">ડબલ પન્ના   -</string>
+    <string name="trippan">ટ્રિપલ પન્ના   -</string>
+    <string name="halfsanga">અડધો સંગમ   -</string>
+    <string name="fulsangam">પૂર્ણ સંગમ   -</string>
+    <string name="depcoin">જમા સિક્કા</string>
+    <string name="balan">સંતુલન   : </string>
+    <string name="enteramouadd">ઉમેરવા માટે રકમ દાખલ કરો</string>
+    <string name="n">૫૦૦</string>
+    <string name="m">૧૦૦૦</string>
+    <string name="o">૨૦૦૦</string>
+    <string name="p">૫૦૦૦</string>
+    <string name="q">૧૦૦૦૦</string>
+    <string name="r">૨૦૦૦૦</string>
+    <string name="gpa">Google Pay</string>
+    <string name="autapp">સ્વતઃ મંજૂર</string>
+    <string name="phpa">ફોન પી</string>
+    <string name="payt">પેટીએમ</string>
+    <string name="manuadm">એડમિન દ્વારા મેન્યુઅલ મંજૂર</string>
+    <string name="propayt">ચુકવણી પર આગળ વધો</string>
+    <string name="diredepo">સીધા થાપણ</string>
+    <string name="withdcoi">સિક્કા પાછા ખેંચો</string>
+    <string name="entrepoi">પોઈન્ટ્સ દાખલ કરો</string>
+    <string name="direcwithd">સીધો ઉપાડ</string>
+    <string name="accnumb">ખાતા નંબર</string>
+    <string name="entrebanacc">બેંક એકાઉન્ટ નંબર દાખલ કરો</string>
+    <string name="accholna">એકાઉન્ટ ધારકનું નામ</string>
+    <string name="entreaccho">એકાઉન્ટ ધારકનું નામ દાખલ કરો</string>
+    <string name="ifsc">IFSC કોડ</string>
+    <string name="addpaymen">ચુકવણી પદ્ધતિ ઉમેરો</string>
+    <string name="entreisc">IFSC કોડ દાખલ કરો</string>
+    <string name="load">લોડ કરી રહ્યું છે...</string>
+    <string name="yourref">તમારો રેફરલ કોડ</string>
+    <string name="sentence">તમારા મિત્રોને એપ્લિકેશનનો સંદર્ભ લો અને પ્રથમ ડિપોઝિટના 10% કમાઓ</string>
+    <string name="bidof">અંકની બોલી</string>
+    <string name="singdi">સિંગલ ડિજિટ</string>
+    <string name="jiddig">જોડી અંકો</string>
+    <string name="redbracket">લાલ કૌંસ</string>
+    <string name="bidpanna">પન્ના ની બોલી</string>
+    <string name="singpatti">સિંગલ પટ્ટી</string>
+    <string name="doubpatti">ડબલ પેટી</string>
+    <string name="trplepati">ટ્રિપલ પટ્ટી</string>
+    <string name="spdptp">એસપી, ડીપી, ટીપી</string>
+    <string name="family_paati">કુટુંબ પટ્ટી</string>
+    <string name="bidjodi">BID OF JODI</string>
+    <string name="famijodi">કુટુંબ જોડી</string>
+    <string name="redfamjodi">લાલ કુટુંબ જોડી</string>
+    <string name="bidmoto">મોટરની બોલી</string>
+    <string name="spmoto">એસપી મોટર</string>
+    <string name="dpmoto">ડીપી મોટર</string>
+    <string name="easy_mode">સરળ મોડ</string>
+    <string name="special_mode">ખાસ મોડ</string>
+    <string name="biddigi">બિડ અંકો</string>
+    <string name="bidpoint">બિડ પોઈન્ટ</string>
+    <string name="adbid">બિડ્સ ઉમેરો</string>
+    <string name="dig">અંક</string>
+    <string name="amou">રકમ</string>
+    <string name="game_type">રમત પ્રકાર</string>
+    <string name="total">કુલ</string>
+    <string name="pa_y">ચૂકવણી</string>
+    <string name="ope_patti">પટ્ટી ખોલો</string>
+    <string name="clo_patti">પટ્ટી બંધ કરો</string>
+    <string name="sele_game">રમત પસંદ કરો</string>
+    <string name="ank">અંક</string>
+    <string name="pati">પટ્ટી</string>
+
+
+
+
+</resources>

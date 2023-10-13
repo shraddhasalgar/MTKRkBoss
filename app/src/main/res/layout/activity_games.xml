@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".games">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:padding="5dp"
+            android:background="@color/playwinprimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:padding="10dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/back"
+                        android:id="@+id/back"
+                        app:tint="@color/black" />
+
+
+                    <com.rkboss.mtk.latobold
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="visible"
+                    android:layout_marginRight="15dp">
+
+                    <com.rkboss.mtk.latobold
+                        android:id="@+id/timing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Timming"
+                        android:textColor="@color/black"
+                        android:visibility="visible"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:background="@color/playwinbg"
+            android:orientation="vertical">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="70dp"
+                android:scrollbars="none"
+                tools:ignore="SpeakableTextPresentCheck">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="160dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rect_ax"
+                        android:backgroundTint="@color/playwinprimary"
+                        android:gravity="center"
+                        android:layout_height="40dp">
+
+                        <com.rkboss.mtk.latobold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/comfortaa"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            android:text="BID OF DIGIT"
+                            android:textColor="@color/black"
+                            android:textFontWeight="600"
+                            />
+
+
+
+                    </RelativeLayout>
+
+
+
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toolbar"
+                    android:gravity="center"
+                     android:layout_marginTop="35dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/single"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/ic_singledigits" />
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:layout_marginTop="10dp"
+                                android:textSize="14dp"
+                                android:fontFamily="@font/comfortaa"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:text="Single Digits" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/jodi"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/ic_jodidigits" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:textSize="14dp"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/comfortaa"
+                                android:textStyle="bold"
+                                android:text="Jodi Digits" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/odd_even"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/ic_oddeven" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/lato"
+                                android:textSize="16dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:text="Odd Even" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="15dp"
+                         android:orientation="horizontal">
+
+                         <LinearLayout
+                             android:layout_width="150dp"
+                             android:layout_height="match_parent"
+                             android:gravity="center"
+                             android:visibility="gone"
+                             android:orientation="vertical">
+
+
+                             <ImageView
+                                 android:layout_width="100dp"
+                                 android:layout_height="80dp"
+                                 android:layout_weight="1"
+                                 app:srcCompat="@drawable/ic_jodidigits" />
+
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:layout_weight="1"
+                                 android:textSize="16dp"
+                                 android:textColor="@color/black"
+                                 android:fontFamily="@font/lato"
+                                 android:textStyle="bold"
+                                 android:text="Jodi Digits" />
+                         </LinearLayout>
+
+
+                         <LinearLayout
+                             android:id="@+id/red_bracket"
+                             android:layout_width="150dp"
+                             android:layout_height="match_parent"
+                             android:gravity="center"
+                             android:orientation="vertical">
+
+
+                             <ImageView
+                                 android:layout_width="80dp"
+                                 android:layout_height="80dp"
+                                 android:layout_weight="1"
+                                 app:srcCompat="@drawable/redbrack_ax" />
+
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:layout_weight="1"
+                                 android:layout_marginTop="10dp"
+
+                                 android:textColor="@color/black"
+                                 android:textSize="14dp"
+                                 android:fontFamily="@font/comfortaa"
+                                 android:textStyle="bold"
+                                 android:text="Red Bracket" />
+                         </LinearLayout>
+                     </LinearLayout>
+
+
+
+
+                 </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="160dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rect_ax"
+                        android:backgroundTint="@color/playwinprimary"
+                        android:gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:layout_height="40dp">
+
+                        <com.rkboss.mtk.latobold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="5dp"
+                            android:text="BID OF PANNA"
+                            android:textColor="@color/black"
+                            android:textFontWeight="600"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/comfortaa"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/toolbar"
+                        android:gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="25dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/singlepatti"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_singlepana" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/comfortaa"
+                                    android:textStyle="bold"
+
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/black"
+
+                                    android:text="Single Patti" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/doublepatti"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_doublepana" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/comfortaa"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/black"
+
+                                    android:text="Double Patti" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/tripepatti"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_triplepana" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/comfortaa"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/black"
+                                    android:text="Triple Patti" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/spdptp"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/spdptp_ax" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/comfortaa"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/black"
+                                    android:text="SP, DP, TP" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/cyclePanna"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/cycle_panna_ax" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/comfortaa"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="10dp"
+
+                                    android:textColor="@color/black"
+                                    android:text="Cycle Patti" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/familypannel"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_spdptp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/comfortaa"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="10dp"
+
+                                    android:textColor="@color/black"
+                                    android:text="Family Patti" />
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="160dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rect_ax"
+                            android:backgroundTint="@color/playwinprimary"
+                            android:gravity="center"
+                            android:layout_marginTop="35dp"
+                            android:layout_height="40dp">
+
+                            <com.rkboss.mtk.latobold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:padding="5dp"
+                                android:text="BID OF JODI"
+                                android:textColor="@color/black"
+                                android:textFontWeight="600"
+                                android:textSize="14dp"
+                                android:fontFamily="@font/comfortaa"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="35dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/familyJodi"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/familyjodi_ax" />
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/comfortaa"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/black"
+                                    android:text="Family Jodi" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/redFamilyJodi"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/redfamilyjodi_ax" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/comfortaa"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/black"
+                                    android:text="Red Family Jodi" />
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="160dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rect_ax"
+                            android:backgroundTint="@color/playwinprimary"
+                            android:gravity="center"
+                            android:layout_marginTop="35dp"
+                            android:layout_height="40dp">
+
+                            <com.rkboss.mtk.latobold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:padding="5dp"
+                                android:textSize="14dp"
+                                android:fontFamily="@font/comfortaa"
+                                android:textStyle="bold"
+                                android:text="BID OF SANGAM"
+                                android:textColor="@color/black"
+                                android:textFontWeight="600" />
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="35dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/halfsangam"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_halfsangam" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/comfortaa"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="10dp"
+
+                                    android:textColor="@color/black"
+                                    android:text="Half Sangam" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/fullsangam"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_fullsangam" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/comfortaa"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/black"
+
+                                    android:text="Full Sangam" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="160dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rect_ax"
+                            android:backgroundTint="@color/playwinprimary"
+                            android:gravity="center"
+                            android:layout_marginTop="35dp"
+                            android:layout_height="40dp">
+
+                            <com.rkboss.mtk.latobold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:padding="5dp"
+                                android:textSize="14dp"
+                                android:fontFamily="@font/comfortaa"
+                                android:textStyle="bold"
+                                android:text="BID OF MOTOR"
+                                android:textColor="@color/black"
+                                android:textFontWeight="600" />
+
+                        </RelativeLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="35dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/sp_motor"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/sp_motor1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/comfortaa"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/black"
+                                    android:text="SP Motor" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/dp_motor"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/dp_motor1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="10dp"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/comfortaa"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:text="DP Motor" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

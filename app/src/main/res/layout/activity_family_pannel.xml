@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/playwinprimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:padding="10dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/back"
+                    android:id="@+id/back"
+                    android:layout_marginLeft="10dp"
+                    app:tint="@color/black" />
+
+
+
+                <com.rkboss.mtk.latobold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/lato"
+                    android:textStyle="bold"
+                    android:id="@+id/title"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/family_paati"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/wallet_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="visible"
+                android:layout_marginRight="10dp">
+
+                <com.rkboss.mtk.latobold
+                    android:id="@+id/balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/lato"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/coin"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:visibility="visible"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/wallet_icon" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/playwinbg"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="30dp"
+            android:scrollbars="none"
+            android:layout_marginBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.rkboss.mtk.latobold
+                        android:id="@+id/balance2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#730800"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:padding="10dp"
+                        android:text="Balance : 0"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp">
+
+                        <com.rkboss.mtk.latobold
+                            android:id="@+id/date"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/type_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:visibility="gone"
+                            android:background="@color/black"
+                            android:orientation="horizontal"
+                            android:padding="1dp">
+
+                            <com.rkboss.mtk.latobold
+                                android:id="@+id/open_game"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:background="@color/playwinprimary"
+                                android:padding="10dp"
+                                android:textSize="14sp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/comfortaa"
+                                android:textStyle="bold"
+                                android:text="OPEN"
+                                android:textColor="@color/white" />
+
+                            <com.rkboss.mtk.latobold
+                                android:id="@+id/close_game"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/comfortaa"
+                                android:textStyle="bold"
+                                android:text="CLOSE"
+                                android:textColor="@color/font"
+
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@color/black"
+                            android:orientation="horizontal"
+                            android:padding="1dp"
+                            android:visibility="gone">
+
+                            <com.rkboss.mtk.latobold
+                                android:id="@+id/easy"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:fontFamily="@font/comfortaa"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:visibility="gone"
+                                android:text="@string/easy_mode"
+                                android:textColor="@color/font"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/black" />
+
+                            <com.rkboss.mtk.latobold
+                                android:id="@+id/special"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:fontFamily="@font/comfortaa"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:visibility="gone"
+                                android:text="@string/special_mode"
+                                android:textColor="@color/font"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+
+                                />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/easybet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clipToPadding="false"
+                            android:padding="8dp"
+                            android:visibility="gone"
+                            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                            app:spanCount="2"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+                    </LinearLayout>
+
+
+                    <Spinner
+                        android:id="@+id/type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/edittext"
+                        android:padding="5dp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/bet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.rkboss.mtk.latobold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="@string/biddigi"
+                                android:fontFamily="@font/comfortaa"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:textColor="@color/black"
+                                />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/comfortaa"
+                                android:background="@drawable/edittext"
+                                android:completionThreshold="0"
+                                android:hint="Enter Digit"
+                                android:maxLength="3"
+                                app:fontFamily="@font/lato"
+                                android:inputType="number"
+                                android:textColor="@color/black"
+                                android:textColorHint="#60000000"
+                                android:textSize="13sp"
+                                android:visibility="visible"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/number9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:maxLength="1"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/edittext2"
+                                android:textColorHint="@color/md_black_1000"
+                                android:completionThreshold="0"
+                                android:hint="Enter Digit"
+                                android:inputType="number"
+
+                                android:textSize="13sp"
+                                android:visibility="gone" />
+
+
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.rkboss.mtk.latobold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="@string/bidpoint"
+                                android:fontFamily="@font/comfortaa"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:textColor="@color/black" />
+
+                            <EditText
+                                android:id="@+id/amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/edittext"
+                                android:hint="Enter Points"
+                                android:textStyle="bold"
+                                android:maxLength="5"
+                                android:fontFamily="@font/comfortaa"
+                                android:inputType="number"
+                                android:textColor="@color/black"
+                                android:textColorHint="#60000000"
+                                android:textSize="13sp"
+                                android:visibility="visible"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/ax_loginbutton"
+                        android:gravity="center"
+                        android:text="@string/adbid"
+                        android:visibility="visible"
+
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:background="#23000000" />
+
+
+                <!--          <androidx.cardview.widget.CardView-->
+                <!--              android:layout_width="match_parent"-->
+                <!--              android:layout_height="wrap_content"-->
+                <!--              android:layout_margin="15dp"-->
+                <!--              app:cardCornerRadius="5dp"-->
+                <!--              app:cardElevation="5dp">-->
+
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:orientation="vertical">-->
+
+
+                <!--              <LinearLayout-->
+                <!--                  android:layout_width="match_parent"-->
+                <!--                  android:layout_height="wrap_content"-->
+                <!--                  android:orientation="horizontal"-->
+                <!--                  android:weightSum="4">-->
+
+                <!--                <com.betplay.android.latonormal-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:padding="10dp"-->
+                <!--                    android:text="Digit"-->
+                <!--                    android:textColor="@color/font" />-->
+
+                <!--                <View-->
+                <!--                    android:layout_width="1dp"-->
+                <!--                    android:layout_height="match_parent" />-->
+
+                <!--                <com.betplay.android.latonormal-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:padding="10dp"-->
+                <!--                    android:text="Amount"-->
+                <!--                    android:textColor="@color/font" />-->
+
+                <!--                <View-->
+                <!--                    android:layout_width="1dp"-->
+                <!--                    android:layout_height="match_parent" />-->
+
+
+                <!--                <com.betplay.android.latonormal-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="2"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:padding="10dp"-->
+                <!--                    android:text="Game type"-->
+                <!--                    android:textColor="@color/font" />-->
+
+                <!--              </LinearLayout>-->
+
+                <!--              <View-->
+                <!--                  android:layout_width="match_parent"-->
+                <!--                  android:layout_height="1dp"-->
+                <!--                  android:background="#31000000" />-->
+
+                <!--              <androidx.recyclerview.widget.RecyclerView-->
+                <!--                  android:id="@+id/recyclerview"-->
+                <!--                  android:layout_width="match_parent"-->
+                <!--                  android:layout_height="wrap_content"-->
+                <!--                  android:minHeight="100dp"-->
+                <!--                  android:nestedScrollingEnabled="true" />-->
+
+
+                <!--            </LinearLayout>-->
+
+                <!--          </androidx.cardview.widget.CardView>-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/digit_header"
+                    android:weightSum="4">
+
+                    <com.rkboss.mtk.latonormal
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/comfortaa"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:text="@string/dig"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent" />
+
+                    <com.rkboss.mtk.latonormal
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/comfortaa"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:text="@string/amou"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent" />
+
+
+                    <com.rkboss.mtk.latonormal
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:fontFamily="@font/comfortaa"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:text="@string/game_type"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    android:nestedScrollingEnabled="true" />
+
+                <LinearLayout
+                    android:id="@+id/total"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:gravity="end"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="10dp">
+
+                    <com.rkboss.mtk.latonormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/total"
+                        android:textColor="@color/font"
+                        android:textSize="22sp" />
+
+                    <EditText
+                        android:id="@+id/totalamount"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/edittext"
+                        android:focusable="false"
+                        android:hint=""
+                        android:inputType="number"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/total1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="10dp"
+                    android:visibility="gone">
+
+                    <com.rkboss.mtk.latonormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/total"
+                        android:textColor="@color/font"
+                        android:textSize="22sp" />
+
+                    <EditText
+                        android:id="@+id/totalamount1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/edittext"
+                        android:focusable="false"
+                        android:hint=""
+                        android:inputType="number"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/ax_loginbutton"
+                    android:gravity="center"
+                    android:text="@string/submit_string"
+                    android:visibility="visible"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/ax_loginbutton"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="@string/pa_y"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

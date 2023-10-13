@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/rk_boss" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa"
+        android:gravity="center"
+        android:text="SIGN UP"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.602">
+
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/ax_roundborder"
+            android:fontFamily="@font/lato"
+            android:hint="Enter Mobile Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="15dp"
+            android:visibility="visible"
+            app:drawableEndCompat="@drawable/ic_baseline_mobile_friendly_24"
+            tools:ignore="TouchTargetSizeCheck"></EditText>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/ax_roundborder"
+            android:fontFamily="@font/lato"
+            android:hint="Enter Name"
+            android:maxLength="20"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:text=""
+
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="15dp"
+            android:visibility="visible"
+            app:drawableEndCompat="@drawable/ic_person"
+
+            tools:ignore="TouchTargetSizeCheck"></EditText>
+
+
+        <EditText
+            android:id="@+id/pinCode"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/md_white_1000"
+            android:hint="Enter Pin "
+            android:inputType="number"
+            android:maxLength="4"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/md_black_1000"
+            android:textColorHint="@color/md_black_1000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/edittext"
+            android:fontFamily="@font/lato"
+            android:hint="Enter Emailid"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text=""
+            android:textColor="@color/md_black_1000"
+            android:textColorHint="@color/md_black_1000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/ax_roundborder"
+            android:fontFamily="@font/lato"
+            android:hint="Enter Password"
+            android:inputType="number"
+            android:maxLength="12"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="15dp"
+            android:visibility="visible"
+            app:drawableEndCompat="@drawable/ic_password"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck"></EditText>
+
+
+        <EditText
+            android:id="@+id/referalcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/ax_roundborder"
+            android:fontFamily="@font/lato"
+            android:hint="Enter Referral Code ( Optional )"
+            android:maxLength="12"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="15dp"
+            android:visibility="visible"
+            app:drawableEndCompat="@drawable/ic_baseline_add_comment_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck"></EditText>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/ax_loginbutton"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textAllCaps="false"
+        android:text="Sign Up"
+        android:textColor="@color/md_black_1000"
+        android:textColorHint="@color/md_black_1000"
+        android:textSize="18dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.845">
+
+
+    </Button>
+
+    <TextView
+        android:id="@+id/bcklogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato"
+        android:gravity="center"
+        android:text="Already a member ? Sign In"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.901" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

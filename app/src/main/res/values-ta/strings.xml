@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string name="app_name">ஆர்.கே பாஸ்</string>
+
+        <!--APIs-->
+        <string name="market_api">market.php</string>
+        <string name="market_list">market_list.php</string>
+        <string name="bet">bet.php</string>
+        <string name="charts">charts.php</string>
+        <string name="sangam">sangam.php</string>
+        <string name="content">content.php</string>
+        <string name="ledger">gameledger.php</string>
+        <string name="ledgers">ax_winning.php</string>
+        <string name="login">login.php</string>
+        <string name="home">home.php</string>
+        <string name="games">games.php</string>
+        <string name="profile">profile.php</string>
+        <string name="password">password.php</string>
+        <string name="rate">rate.php</string>
+        <string name="register">register.php</string>
+        <string name="transaction">transaction.php</string>
+        <string name="get_gateway">get_gateway.php</string>
+        <string name="getconfig">get_config.php</string>
+        <string name="withdraw_modes">withdraw_modes.php</string>
+        <string name="withdraw_request">withdraw_request.php</string>
+        <string name="market_list_starline">market_list_starline.php</string>
+        <string name="starline_timings">starline_timings.php</string>
+
+        <string name="delhi_markets">delhi_markets.php</string>
+        <string name="reset_pin">reset_pin.php</string>
+        <string name="ax_validpin">ax_validpin.php</string>
+        <string name="resend_otp">குறியீட்டை மீண்டும் அனுப்பு ?</string>
+
+        <string name="gpay">com.google.android.apps.nbu.paisa.user</string>
+        <string name="paytm">net.one97.paytm</string>
+        <string name="phonepe">com.phonepe.app</string>
+        <!-- TODO: Remove or change this placeholder text -->
+        <string name="hello_blank_fragment">வணக்கம் வெற்று துண்டு</string>
+
+
+        <string name="ek_img_content">ExportKit படம்</string>
+        <string name="sign_up_string">பதிவு செய்யவும்</string>
+        <string name="enter_your_personal_details_to_continue_string">தொடர உங்கள் தனிப்பட்ட விவரங்களை உள்ளிடவும்</string>
+        <string name="enter_mobile_number_string">மொபைல் எண்ணை உள்ளிடவும்</string>
+        <string name="enter_name_string">பெயரை உள்ளிடுக</string>
+        <string name="enter_emailid_string">மின்னஞ்சல் ஐடியை உள்ளிடவும்</string>
+        <string name="enter_password_string">கடவுச்சொல்லை உள்ளிடவும்</string>
+        <string name="enter_pin_string">பின்னை உள்ளிடவும்</string>
+        <string name="enter_referral_code_string">பரிந்துரை குறியீட்டை உள்ளிடவும்</string>
+        <string name="submit_string">சமர்ப்பிக்கவும்</string>
+        <string name="title_activity_single_bet">SingleBet</string>
+        <!-- Strings used for fragments for navigation -->
+        <string name="first_fragment_label">முதல் துண்டு</string>
+        <string name="second_fragment_label">இரண்டாவது துண்டு</string>
+        <string name="next">அடுத்தது</string>
+        <string name="previous">முந்தைய</string>
+        <string name="play_jodi">ஜோடி விளையாடு</string>
+
+
+        <string name="hello_first_fragment">வணக்கம் முதல் துண்டு</string>
+        <string name="hello_second_fragment">வணக்கம் இரண்டாவது துண்டு. ஆர்க்: %1$s</string>
+
+        <string name="qrimg">qr_code.php</string>
+
+        <string name="changeLang">மொழியை மாற்றவும்</string>
+
+
+        <string name="signin">உள்நுழையவும்</string>
+        <string name="log_in">உள்நுழைய</string>
+        <string name="extraa">இன்னும் பதிவு செய்யவில்லையா? பதிவு செய்யவும்</string>
+        <string name="myprofile">என் சுயவிவரம்</string>
+        <string name="mywallet">என் பணப்பை</string>
+        <string name="game_rate">விளையாட்டு விகிதம்</string>
+        <string name="addpoints">புள்ளிகளைச் சேர்க்கவும்</string>
+        <string name="game">விளையாட்டு வரலாறு</string>
+        <string name="withdrawpoints">புள்ளிகளை திரும்பப் பெறவும்</string>
+        <string name="bankdetails">வங்கி விவரங்கள்</string>
+        <string name="transfercoins">பரிமாற்ற நாணயங்கள்</string>
+        <string name="howtoplay">எப்படி விளையாடுவது</string>
+        <string name="contactus">எங்களை தொடர்பு கொள்ள</string>
+        <string name="referearn">பரிந்துரை செய்து சம்பாதிக்கவும்</string>
+        <string name="rateus">எங்களை மதிப்பிடு</string>
+        <string name="logoutt">வெளியேறு</string>
+        <string name="num">600</string>
+        <string name="numbe">+91-</string>
+        <string name="watsapp">பகிரி</string>
+        <string name="chart">விளக்கப்படம்</string>
+        <string name="wallet">பணப்பை</string>
+        <string name="rete">மதிப்பிடவும்</string>
+        <string name="withd">திரும்பப் பெறவும்</string>
+        <string name="playwin">விளையாடி வெற்றி பெறுங்கள்</string>
+        <string name="deposmoney">டெபாசிட் பணம்</string>
+        <string name="withmone">பணத்தை எடுக்கவும்</string>
+        <string name="playsingle">ஒற்றை விளையாடு</string>
+        <string name="appnoti">பயன்பாட்டு அறிவிப்பு</string>
+        <string name="starline">ஸ்டார்லைன் கேம்ஸ்</string>
+        <string name="playjodi">ஜோடி விளையாடு</string>
+        <string name="singlepanna">சிங்கிள் பண்ணா</string>
+        <string name="doublepanna">டபுள் பண்ணா</string>
+        <string name="triplepanna">டிரிபிள் பண்ணா</string>
+        <string name="halfsang">பாதி சங்கம்</string>
+        <string name="fullsang">முழு சங்கமம்</string>
+        <string name="jodicro">ஜோடி கிராசிங்</string>
+        <string name="gakidesh">கலி தேசவர் விளையாட்டுகள்</string>
+        <string name="proi">சுயவிவரம்</string>
+        <string name="depos">வைப்பு</string>
+        <string name="cha">விளக்கப்படங்கள்</string>
+        <string name="notset">அறிவிப்பு அமைப்புகள்</string>
+        <string name="shar">பகிர்</string>
+        <string name="exi">வெளியேறு</string>
+        <string name="refre">புதுப்பிப்பு</string>
+        <string name="addmoney">பணம் சேர்</string>
+
+
+        <string name="noset">அறிவிப்பு அமைப்பு</string>
+        <string name="managpro">சுயவிவரத்தை நிர்வகிக்கவும்</string>
+        <string name="nam">பெயர்</string>
+        <string name="mob">கைபேசி எண்</string>
+        <string name="updprof">சுயவிவரத்தைப் புதுப்பிக்கவும்</string>
+        <string name="chapass">கடவுச்சொல்லை மாற்று</string>
+        <string name="newpass">புதிய கடவுச்சொல்</string>
+        <string name="confpass">கடவுச்சொல்லை உறுதிப்படுத்தவும்</string>
+        <string name="updpass">கடவுச்சொல்லை புதுப்பிக்கவும்</string>
+        <string name="addfun">நிதி சேர்</string>
+        <string name="withdfun">நிதிகளை திரும்பப் பெறவும்</string>
+        <string name="winhist">வென்ற வரலாறு</string>
+        <string name="transhist">பரிவர்த்தனை வரலாறு</string>
+        <string name="bidhist">ஏல வரலாறு</string>
+
+        <string name="sing">ஒற்றை   -</string>
+        <string name="jod">ஜோடி    -</string>
+        <string name="singpan">சிங்கிள் பண்ணா   -</string>
+        <string name="doubpan">டபுள் பண்ணா   -</string>
+        <string name="trippan">டிரிபிள் பண்ணா   -</string>
+        <string name="halfsanga">பாதி சங்கம்   -</string>
+        <string name="fulsangam">முழு சங்கமம்   -</string>
+        <string name="depcoin">நாணயங்களை வைப்பு</string>
+        <string name="balan">இருப்பு   : </string>
+        <string name="enteramouadd">சேர்க்க வேண்டிய தொகையை உள்ளிடவும்</string>
+        <string name="n">௫௦௦</string>
+        <string name="m">௧௦௦௦</string>
+        <string name="o">௨௦௦௦</string>
+        <string name="p">௫௦௦௦</string>
+        <string name="q">௧௦௦௦௦</string>
+        <string name="r">௨௦௦௦௦</string>
+        <string name="gpa">கூகுள் பே</string>
+        <string name="autapp">தானாக ஒப்புதல்</string>
+        <string name="phpa">தொலைபேசி பெ</string>
+        <string name="payt">Paytm</string>
+        <string name="manuadm">நிர்வாகியால் கைமுறையாக அங்கீகரிக்கப்பட்டது</string>
+        <string name="propayt">பணம் செலுத்த தொடரவும்</string>
+        <string name="diredepo">நேரடி வைப்பு</string>
+        <string name="withdcoi">நாணயங்களை திரும்பப் பெறவும்</string>
+        <string name="entrepoi">புள்ளிகளை உள்ளிடவும்</string>
+        <string name="direcwithd">நேரடியாக திரும்பப் பெறுதல்</string>
+        <string name="accnumb">கணக்கு எண்</string>
+        <string name="entrebanacc">வங்கி கணக்கு எண்ணை உள்ளிடவும்</string>
+        <string name="accholna">கணக்கு வைத்திருப்பவரின் பெயர்</string>
+        <string name="entreaccho">கணக்கு வைத்திருப்பவரின் பெயரை உள்ளிடவும்</string>
+        <string name="ifsc">IFSC குறியீடு</string>
+        <string name="addpaymen">கட்டண முறையைச் சேர்க்கவும்</string>
+        <string name="entreisc">IFSC குறியீட்டை உள்ளிடவும்</string>
+        <string name="load">ஏற்றுகிறது...</string>
+        <string name="yourref">உங்கள் பரிந்துரை குறியீடு</string>
+        <string name="sentence">உங்கள் நண்பர்களிடம் பயன்பாட்டைப் பார்க்கவும் மற்றும் முதல் வைப்புத்தொகையில் 10% சம்பாதிக்கவும்</string>
+        <string name="bidof">இலக்கத்தின் ஏலம்</string>
+        <string name="singdi">ஒற்றை இலக்கங்கள்</string>
+        <string name="jiddig">ஜோடி இலக்கங்கள்</string>
+        <string name="redbracket">சிவப்பு அடைப்புக்குறி</string>
+        <string name="bidpanna">பன்னாவின் ஏலம்</string>
+        <string name="singpatti">சிங்கிள் பட்டி</string>
+        <string name="doubpatti">டபுள் பட்டி</string>
+        <string name="trplepati">டிரிபிள் பட்டி</string>
+        <string name="spdptp">எஸ்பி, டிபி, டிபி</string>
+        <string name="family_paati">குடும்ப பாட்டி</string>
+        <string name="bidjodi">ஜோடியின் ஏலம்</string>
+        <string name="famijodi">குடும்ப ஜோடி</string>
+        <string name="redfamjodi">சிவப்பு குடும்ப ஜோடி</string>
+        <string name="bidmoto">மோட்டரின் ஏலம்</string>
+        <string name="spmoto">SP மோட்டார்</string>
+        <string name="dpmoto">டிபி மோட்டார்</string>
+        <string name="easy_mode">எளிதான பயன்முறை</string>
+        <string name="special_mode">சிறப்பு முறை</string>
+        <string name="biddigi">ஏல இலக்கங்கள்</string>
+        <string name="bidpoint">ஏலப் புள்ளிகள்</string>
+        <string name="adbid">ஏலங்களைச் சேர்க்கவும்</string>
+        <string name="dig">இலக்கம்</string>
+        <string name="amou">தொகை</string>
+        <string name="game_type">விளையாட்டு வகை</string>
+        <string name="total">மொத்தம்</string>
+        <string name="pa_y">செலுத்து</string>
+        <string name="ope_patti">பாட்டியைத் திற</string>
+        <string name="clo_patti">மூடு பட்டி</string>
+        <string name="sele_game">விளையாட்டைத் தேர்ந்தெடுக்கவும்</string>
+        <string name="ank">Ank</string>
+        <string name="pati">பட்டி</string>
+
+
+
+
+
+
+</resources>

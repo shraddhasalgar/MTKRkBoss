@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#A6FFFFFF">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:weightSum="4"
+        >
+
+        <com.rkboss.mtk.latonormal
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="02/11/2019"
+            android:gravity="center"
+            android:id="@+id/date"
+            android:textSize="12dp"
+            android:fontFamily="@font/comfortaa"
+            android:textStyle="bold"
+            android:padding="10dp"
+
+            android:textColor="@color/black"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            />
+
+        <com.rkboss.mtk.latonormal
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="200"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:fontFamily="@font/comfortaa"
+            android:textStyle="bold"
+            android:id="@+id/amount"
+            android:textColor="@color/black"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            >
+            <com.rkboss.mtk.latonormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Game played"
+                android:id="@+id/remark"
+                android:textSize="12dp"
+                android:fontFamily="@font/comfortaa"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="26dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_delete" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

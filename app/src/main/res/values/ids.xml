@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="recyclerVieweasy" type="id" />
+    <item name="text_view_number" type="id" />
+    <item name="edit_text_number" type="id" />
+</resources>

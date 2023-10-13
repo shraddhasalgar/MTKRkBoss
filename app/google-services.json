@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "704966593185",
+    "project_id": "rkboss-2bd54",
+    "storage_bucket": "rkboss-2bd54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704966593185:android:a4d31afd4e170aa294fee0",
+        "android_client_info": {
+          "package_name": "com.rkboss.mtk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOXLPifGLfgUxklpGX1Q7nsoGLdPq52iU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

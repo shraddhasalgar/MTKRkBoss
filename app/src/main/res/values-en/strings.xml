@@ -1,0 +1,201 @@
+<resources>
+    <string name="app_name">RK Boss</string>
+
+    <!--APIs-->
+    <string name="market_api">market.php</string>
+    <string name="market_list">market_list.php</string>
+    <string name="bet">bet.php</string>
+    <string name="charts">charts.php</string>
+    <string name="sangam">sangam.php</string>
+    <string name="content">content.php</string>
+    <string name="ledger">gameledger.php</string>
+    <string name="ledgers">ax_winning.php</string>
+    <string name="login">login.php</string>
+    <string name="home">home.php</string>
+    <string name="games">games.php</string>
+    <string name="profile">profile.php</string>
+    <string name="password">password.php</string>
+    <string name="rate">rate.php</string>
+    <string name="register">register.php</string>
+    <string name="transaction">transaction.php</string>
+    <string name="get_gateway">get_gateway.php</string>
+    <string name="getconfig">get_config.php</string>
+    <string name="withdraw_modes">withdraw_modes.php</string>
+    <string name="withdraw_request">withdraw_request.php</string>
+    <string name="market_list_starline">market_list_starline.php</string>
+    <string name="starline_timings">starline_timings.php</string>
+
+    <string name="delhi_markets">delhi_markets.php</string>
+    <string name="reset_pin">reset_pin.php</string>
+    <string name="ax_validpin">ax_validpin.php</string>
+    <string name="resend_otp">Re-send code ?</string>
+
+    <string name="gpay">com.google.android.apps.nbu.paisa.user</string>
+    <string name="paytm">net.one97.paytm</string>
+    <string name="phonepe">com.phonepe.app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="sign_up_string">Sign up</string>
+    <string name="enter_your_personal_details_to_continue_string">Enter your personal details to continue</string>
+    <string name="enter_mobile_number_string">Enter mobile number</string>
+    <string name="enter_name_string">Enter Name</string>
+    <string name="enter_emailid_string">Enter EmailId</string>
+    <string name="enter_password_string">Enter Password</string>
+    <string name="enter_pin_string">Enter Pin</string>
+    <string name="enter_referral_code_string">Enter Referral Code</string>
+    <string name="submit_string">SUBMIT</string>
+    <string name="title_activity_single_bet">SingleBet</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="play_jodi">Play Jodi</string>
+
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="qrimg">qr_code.php</string>
+
+    <string name="changeLang">Change Language</string>
+
+
+
+    <string name="signin">SIGN IN</string>
+    <string name="log_in">Login</string>
+    <string name="extraa">Not registered yet ? Sign Up</string>
+    <string name="myprofile">My Profile</string>
+    <string name="mywallet">My Wallet</string>
+    <string name="game_rate">Game Rate</string>
+    <string name="addpoints">Add Points</string>
+    <string name="game">Game History</string>
+    <string name="withdrawpoints">Withdraw Points</string>
+    <string name="bankdetails">Bank Details</string>
+    <string name="transfercoins">Transfer Coins</string>
+    <string name="howtoplay">How To Play</string>
+    <string name="contactus">Contact Us</string>
+    <string name="referearn">Refer and earn</string>
+    <string name="rateus">Rate us</string>
+    <string name="logoutt">Logout</string>
+    <string name="num">600</string>
+    <string name="numbe">+91-</string>
+    <string name="watsapp">WHATSAPP</string>
+    <string name="chart">Chart</string>
+    <string name="wallet">Wallet</string>
+    <string name="rete">Rate</string>
+    <string name="withd">Withdraw</string>
+    <string name="playwin">Play and win</string>
+    <string name="deposmoney">Deposit Money</string>
+    <string name="withmone">Withdraw Money</string>
+    <string name="playsingle">Play Single</string>
+    <string name="appnoti">App Notification</string>
+    <string name="starline">Starline Games</string>
+    <string name="playjodi">Play Jodi</string>
+    <string name="singlepanna">Single Panna</string>
+    <string name="doublepanna">Double Panna</string>
+    <string name="triplepanna">Triple Panna</string>
+    <string name="halfsang">Half Sangam</string>
+    <string name="fullsang">Full Sangam</string>
+    <string name="jodicro">Jodi Crossing</string>
+    <string name="gakidesh">GALI DESAWAR GAMES</string>
+    <string name="proi">Profile</string>
+    <string name="depos">Deposite</string>
+    <string name="cha">Charts</string>
+    <string name="notset">Notification Settings</string>
+    <string name="shar">Share</string>
+    <string name="exi">EXIT</string>
+    <string name="refre">REFRESH</string>
+
+    <string name="addmoney">Add Money</string>
+
+
+    <string name="noset">Notification Setting</string>
+
+    <string name="managpro">Manage profile</string>
+    <string name="nam">Name</string>
+    <string name="mob">Mobile number</string>
+    <string name="updprof">Update Profile</string>
+    <string name="chapass">Change Password</string>
+    <string name="newpass">New Password</string>
+    <string name="confpass">Confirm Password"</string>
+    <string name="updpass">Update Password</string>
+    <string name="addfun">Add Funds</string>
+    <string name="withdfun">Withdraw Funds</string>
+    <string name="winhist">Winning History</string>
+    <string name="transhist">Transaction History</string>
+    <string name="bidhist">Bid History</string>
+
+    <string name="sing">Single   -</string>
+    <string name="jod">Jodi    -</string>
+    <string name="singpan">Single Panna   -</string>
+    <string name="doubpan">Double Panna   -</string>
+    <string name="trippan">Triple Panna   -</string>
+    <string name="halfsanga">Half Sangam   -</string>
+    <string name="fulsangam">Full Sangam   -</string>
+    <string name="depcoin">Deposite Coins</string>
+    <string name="balan">Balance   : </string>
+    <string name="enteramouadd">Enter amount to add</string>
+    <string name="n">500</string>
+    <string name="m">1000</string>
+    <string name="o">2000</string>
+    <string name="p">5000</string>
+    <string name="q">10000</string>
+    <string name="r">20000</string>
+    <string name="gpa">Google Pay</string>
+    <string name="autapp">Auto approve</string>
+    <string name="phpa">Phone Pe</string>
+    <string name="payt">Paytm</string>
+    <string name="manuadm">Manual approve by admin</string>
+    <string name="propayt">Proceed to Payment</string>
+    <string name="diredepo">Direct Deposit</string>
+    <string name="withdcoi">Withdraw Coins</string>
+    <string name="entrepoi">Enter Points</string>
+    <string name="direcwithd">Direct Withdraw</string>
+    <string name="accnumb">Account Number</string>
+    <string name="entrebanacc">Enter Bank Account Number</string>
+    <string name="accholna">Account Holder Name</string>
+    <string name="entreaccho">Enter Account Holder Name</string>
+    <string name="ifsc">IFSC Code</string>
+    <string name="addpaymen">Add Payment Method</string>
+    <string name="entreisc">Enter IFSC Code</string>
+    <string name="load">Loading...</string>
+    <string name="yourref">Your referral code</string>
+    <string name="sentence">REFER APP TO YOUR FRIENDS AND EARN 10% OF FIRST DEPOSIT</string>
+    <string name="bidof">BID OF DIGIT</string>
+    <string name="singdi">Single Digits</string>
+    <string name="jiddig">Jodi Digits</string>
+    <string name="redbracket">Red Bracket</string>
+    <string name="bidpanna">BID OF PANNA</string>
+    <string name="singpatti">Single Patti</string>
+    <string name="doubpatti">Double Patti</string>
+    <string name="trplepati">Triple Patti</string>
+    <string name="spdptp">SP, DP, TP</string>
+    <string name="family_paati">Family Patti</string>
+    <string name="bidjodi">BID OF JODI</string>
+    <string name="famijodi">Family Jodi</string>
+    <string name="redfamjodi">Red Family Jodi</string>
+    <string name="bidmoto">BID OF MOTOR</string>
+    <string name="spmoto">SP Motor</string>
+    <string name="dpmoto">DP Motor</string>
+    <string name="easy_mode">EASY MODE</string>
+    <string name="special_mode">SPECIAL MODE</string>
+    <string name="biddigi">Bid Digits</string>
+    <string name="bidpoint">Bid Points</string>
+    <string name="adbid">Add Bids</string>
+    <string name="dig">Digit</string>
+    <string name="amou">Amount</string>
+    <string name="game_type">Game type</string>
+    <string name="total">Total</string>
+    <string name="pa_y">Pay</string>
+    <string name="ope_patti">Open Patti</string>
+    <string name="clo_patti">Close Patti</string>
+    <string name="sele_game">Select Game</string>
+    <string name="ank">Ank</string>
+    <string name="pati">Patti</string>
+
+
+</resources>

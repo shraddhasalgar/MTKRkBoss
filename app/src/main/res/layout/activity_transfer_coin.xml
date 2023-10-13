@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/playwinprimary">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:src="@drawable/back"
+                    app:tint="@color/black" />
+
+
+                <com.rkboss.mtk.latobold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:textStyle="bold"
+                    android:text="Transfer Coins"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+        android:background="@color/playwinbg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="20dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:background="@drawable/rectangle_3_shape"
+                    android:backgroundTint="@color/md_white_1000"
+                    android:hint="Enter Mobile Number"
+                    android:inputType="phone"
+                    android:drawableTint="@color/black"
+                    android:maxLength="10"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#60000000"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:drawableEndCompat="@drawable/ic_baseline_mobile_friendly_24"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="number"
+                    android:background="@drawable/rectangle_3_shape"
+                    android:backgroundTint="@color/md_white_1000"
+                    android:drawableTint="@color/black"
+                    android:hint="Enter Points"
+                    android:fontFamily="@font/comfortaa"
+                    android:padding="10dp"
+                    android:maxLength="5"
+                    android:textColor="@color/md_black_1000"
+                    android:textColorHint="#60000000"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:drawableEndCompat="@drawable/ic_baseline_monetization_on_24"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/password"
+                    android:visibility="gone"
+                    android:hint="Enter your password"
+                    android:inputType="textPassword"
+                    android:textSize="13sp"
+                    />
+
+                <Button
+                    android:id="@+id/submit11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/ax_loginbutton"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:text="Transfer Coins"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/whatsapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_btn"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone" />
+
+        <com.rkboss.mtk.latobold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="Direct Withdraw"
+            android:textColor="@color/font"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
